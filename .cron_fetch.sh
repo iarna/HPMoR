@@ -4,4 +4,5 @@ fetch_story --toc http://www.fanfiction.net/s/5782108/1/Harry_Potter_and_the_Met
 perl -pi -e's{<br/>P:.*? U:.*?</p>$}{}g' *
 git add -A
 git commit -m "$(date)"
-git push
+git push origin master
+git push origin master:gh-pages
